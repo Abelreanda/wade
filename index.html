@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Edición estática corregida de Charlie Wade.">
+    <title>Charlie Wade - Biblioteca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,400;6..72,600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Charlie Wade, inicio">
+            <span class="brand-mark" aria-hidden="true">CW</span>
+            <span>Charlie Wade</span>
+        </a>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <a class="active" href="index.html">Biblioteca</a>
+            <a href="chapter-1.html">Comenzar a leer</a>
+        </nav>
+    </header>
+    <main>
+        <section class="library-intro" aria-labelledby="library-title">
+            <div class="edition-copy">
+                <p class="eyebrow">Edición en español</p>
+                <h1 id="library-title">Charlie Wade</h1>
+                <p class="deck">El yerno millonario</p>
+            </div>
+            <div class="edition-seal" aria-hidden="true">
+                <span>Publicados</span>
+                <strong>43</strong>
+                <span>capítulos</span>
+            </div>
+        </section>
+
+        <section class="catalog" aria-labelledby="catalog-title">
+            <div class="catalog-heading">
+                <div>
+                    <p class="section-kicker">Biblioteca</p>
+                    <h2 id="catalog-title">Capítulos disponibles</h2>
+                </div>
+                <label class="search-field" for="collection-search">
+                    <span><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Buscar</span>
+                    <input id="collection-search" type="search" placeholder="Número de capítulo" autocomplete="off">
+                </label>
+            </div>
+
+            <div class="archive-summary">
+                <span><strong>43</strong> capítulos publicados</span>
+                <span><strong>1</strong> colección activa</span>
+                <span><strong>100</strong> capítulos por colección</span>
+            </div>
+
+            <div class="collection-grid">
+                <a class="collection-card" href="chapters-1-100.html" data-collection data-range-min="1" data-range-max="43" data-search="colección 1 capítulos 1 43 100">
+                    <span class="collection-label">Colección 01</span>
+                    <strong>Capítulos 1-43</strong>
+                    <span class="collection-meta">Índice preparado para 1-100</span>
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <p class="empty-state" id="collection-empty-state" hidden>Ese capítulo todavía no está publicado.</p>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <span>Charlie Wade</span>
+        <span>Lectura estática - Catppuccin Mocha</span>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
